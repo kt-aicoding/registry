@@ -36,6 +36,7 @@ Canonical index for KT AI Coding projects: skills, MCP servers, CLI tools, and a
 
 | Document | Notes |
 | --- | --- |
+| [Catalog Index](catalog/README.md) | Category index for skills, MCP servers, CLI tools, workflows, and operating references. |
 | [Local CLI And MCP System](catalog/local-cli-mcp-system.md) | Kevin's current CLI/MCP operating model, provider login state, and maintenance commands. |
 
 ## Repository Guidelines

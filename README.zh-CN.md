@@ -51,6 +51,7 @@ KT AI Coding 的组织级索引，用来维护 Skills、MCP Servers、CLI 工具
 
 | 文档 | 说明 |
 | --- | --- |
+| [目录索引](catalog/README.zh-CN.md) | Skills、MCP Servers、CLI Tools、Agent Workflows 和操作资料的分类入口。 |
 | [本地 CLI/MCP 工具体系索引](catalog/local-cli-mcp-system.md) | 指向 CLI 和 MCP 专属仓库里的详细治理文档。 |
 
 ## 仓库规范
