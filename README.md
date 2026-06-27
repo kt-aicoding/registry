@@ -1,0 +1,29 @@
+# KT AI Coding Registry
+
+Canonical index for KT AI Coding projects: skills, MCP servers, CLI tools, and agent workflow templates.
+
+## Categories
+
+| Category | Purpose | Catalog |
+| --- | --- | --- |
+| Skills | Reusable instructions and workflows for AI coding agents | [catalog/skills.md](catalog/skills.md) |
+| MCP Servers | Model Context Protocol servers for coding workflows | [catalog/mcp-servers.md](catalog/mcp-servers.md) |
+| CLI Tools | Command-line utilities for AI coding environments | [catalog/cli-tools.md](catalog/cli-tools.md) |
+| Agent Workflows | Multi-agent and automation templates | [catalog/agent-workflows.md](catalog/agent-workflows.md) |
+
+## Initial Migration Candidates
+
+| Project | Current Location | Suggested Destination | Notes |
+| --- | --- | --- | --- |
+| ccuse | `kevinten-ai/ccuse` | `kt-aicoding/ccuse` | Profile switcher for Claude Code CLI; strong fit as an AI coding CLI tool. |
+| ai-coding-mcp | `kevinten-ai/ai-coding-mcp` | `kt-aicoding/ai-coding-mcp` | Directly aligned with the org scope. |
+| agent-harness-guide | `kevinten-ai/agent-harness-guide` | evaluate | Move if it is primarily about coding-agent harnesses. |
+| mcp-http-proxy | `kevinten-ai/mcp-http-proxy` | evaluate | Move if positioned as MCP/coding-agent network tooling. |
+
+## Repository Guidelines
+
+- Keep this org focused on AI coding infrastructure.
+- Prefer a monorepo for small skills and templates.
+- Promote mature MCP servers and CLIs into standalone repositories.
+- Keep broader AI apps, creative projects, and general experiments in `kevinten-ai`.
+
