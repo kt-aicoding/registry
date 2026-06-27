@@ -1,6 +1,12 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/kt-aicoding/.github/main/assets/logo.svg" alt="KT AI Coding logo" width="120" />
+</p>
+
 # KT AI Coding Registry
 
 Canonical index for KT AI Coding projects: skills, MCP servers, CLI tools, and agent workflow templates.
+
+中文说明见 [README.zh-CN.md](README.zh-CN.md)。
 
 ## Categories
 
@@ -26,4 +32,3 @@ Canonical index for KT AI Coding projects: skills, MCP servers, CLI tools, and a
 - Prefer a monorepo for small skills and templates.
 - Promote mature MCP servers and CLIs into standalone repositories.
 - Keep broader AI apps, creative projects, and general experiments in `kevinten-ai`.
-
