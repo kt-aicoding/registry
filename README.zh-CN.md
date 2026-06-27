@@ -28,7 +28,7 @@ KT AI Coding 项目索引：Skills、MCP Servers、CLI 工具和 Agent 工作流
 
 | 项目 | 分类 | 说明 |
 | --- | --- | --- |
-| [statusline-kit](https://github.com/kt-aicoding/statusline-kit) | CLI Tools | 面向 Claude Code 和 Codex CLI 的状态栏组件。 |
+| [cc-codex-config](https://github.com/kt-aicoding/cc-codex-config) | CLI Tools | Claude Code 和 Codex CLI 配置套件：偏好、状态栏、安装脚本和 Skill。 |
 
 ## 仓库规范
 

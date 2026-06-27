@@ -30,7 +30,7 @@ Canonical index for KT AI Coding projects: skills, MCP servers, CLI tools, and a
 
 | Project | Category | Notes |
 | --- | --- | --- |
-| [statusline-kit](https://github.com/kt-aicoding/statusline-kit) | CLI Tools | Status line kit for Claude Code and Codex CLI. |
+| [cc-codex-config](https://github.com/kt-aicoding/cc-codex-config) | CLI Tools | Claude Code and Codex CLI configuration kit: preferences, status line, installer, and skill. |
 
 ## Repository Guidelines
 
