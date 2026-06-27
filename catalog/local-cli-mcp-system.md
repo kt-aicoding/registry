@@ -24,6 +24,16 @@ This page is the registry-level index for Kevin's local CLI and MCP operating mo
 
 Principle: keep deterministic cloud, database, source-control, and deployment operations on CLIs. Keep global MCP small and reserved for agent-native value such as current documentation retrieval and browser automation.
 
+## Decision Matrix
+
+| Need | Preferred home | Reference |
+| --- | --- | --- |
+| Deterministic command-line operation | `kt-aicoding/cli-tools` | CLI operating docs |
+| Agent-native tool call surface | `kt-aicoding/mcp-servers` | MCP operating docs |
+| Behavior rules and task workflows for agents | `kt-aicoding/skills` | Skill catalog |
+| Cross-category navigation | `kt-aicoding/registry` | This catalog |
+| Product or demo application | Outside this org unless it is AI coding infrastructure | Portfolio-specific repo |
+
 ## Repository Placement
 
 | Content | Preferred repository |

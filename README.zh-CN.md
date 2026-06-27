@@ -32,6 +32,19 @@ KT AI Coding 的组织级索引，用来维护 Skills、MCP Servers、CLI 工具
 | 查 Claude Code / Codex 配置套件 | [kt-aicoding/claudecode-codex-config](https://github.com/kt-aicoding/claudecode-codex-config) |
 | 查跨类别索引和迁移候选 | 本仓库 |
 
+## 判断方法
+
+当一个新资产准备进入 `kt-aicoding` 时，先按下面的规则判断归属：
+
+| 资产形态 | 首选位置 | 说明 |
+| --- | --- | --- |
+| 可复用 Agent 指令、流程、检查清单 | `skills` | 价值主要是行为约束和判断 |
+| 命令行工具、安装器、迁移脚本 | `cli-tools` | 价值主要是可执行命令和确定性操作 |
+| Agent 可调用的外部工具面 | `mcp-servers` | 价值主要是推理循环中的工具调用 |
+| 多 Agent 编排、评审、发布流程 | `agent-workflows` | 价值主要是跨 Agent 或跨阶段协作 |
+| 跨类别索引、迁移候选、组织边界 | `registry` | 价值主要是导航和治理 |
+| 成熟单品 | 独立仓库 | 有独立用户、版本节奏和维护边界 |
+
 ## 初始迁移候选
 
 | 项目 | 当前位置 | 建议目标 | 说明 |
@@ -61,3 +74,11 @@ KT AI Coding 的组织级索引，用来维护 Skills、MCP Servers、CLI 工具
 - 成熟的 MCP server 和 CLI 可以独立成仓。
 - 泛 AI 应用、创意项目和实验性 demo 继续保留在 `kevinten-ai`。
 - 本仓库只保存公开安全的索引信息，不保存 token、cookie、私有路径或私有业务上下文。
+
+## 迁入前检查
+
+- 是否直接服务 AI 编程，而不是泛 AI 应用。
+- 是否有清晰的类别归属，避免一个仓库同时承担 CLI、MCP、skill 和产品职责。
+- 是否能公开说明，不依赖私有路径、私有账号或密钥。
+- 是否已经有最小 README、目录结构和维护边界。
+- 是否值得进入组织级索引，或者更适合留在原组织作为实验项目。
