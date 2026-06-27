@@ -24,6 +24,12 @@ KT AI Coding 项目索引：Skills、MCP Servers、CLI 工具和 Agent 工作流
 | agent-harness-guide | `kevinten-ai/agent-harness-guide` | 待评估 | 如果主要面向 coding agent harness，可以迁入。 |
 | mcp-http-proxy | `kevinten-ai/mcp-http-proxy` | 待评估 | 如果定位为 MCP/coding-agent 网络工具，可以迁入。 |
 
+## 已创建项目
+
+| 项目 | 分类 | 说明 |
+| --- | --- | --- |
+| [statusline-kit](https://github.com/kt-aicoding/statusline-kit) | CLI Tools | 面向 Claude Code 和 Codex CLI 的状态栏组件。 |
+
 ## 仓库规范
 
 - 保持组织边界清晰：只收纳 AI 编程基础设施。

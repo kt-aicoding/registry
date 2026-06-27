@@ -26,6 +26,12 @@ Canonical index for KT AI Coding projects: skills, MCP servers, CLI tools, and a
 | agent-harness-guide | `kevinten-ai/agent-harness-guide` | evaluate | Move if it is primarily about coding-agent harnesses. |
 | mcp-http-proxy | `kevinten-ai/mcp-http-proxy` | evaluate | Move if positioned as MCP/coding-agent network tooling. |
 
+## Created Projects
+
+| Project | Category | Notes |
+| --- | --- | --- |
+| [statusline-kit](https://github.com/kt-aicoding/statusline-kit) | CLI Tools | Status line kit for Claude Code and Codex CLI. |
+
 ## Repository Guidelines
 
 - Keep this org focused on AI coding infrastructure.
