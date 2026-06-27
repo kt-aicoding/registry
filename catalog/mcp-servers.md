@@ -12,7 +12,7 @@ Model Context Protocol servers for AI coding workflows.
 
 | Document | Notes |
 | --- | --- |
-| [Local CLI And MCP System](local-cli-mcp-system.md) | Default MCP surface is intentionally minimal: `context7` for current docs and `playwright` for browser automation. Provider MCPs are not default-enabled when mature CLIs cover the workflow. |
+| [Local MCP System](https://github.com/kt-aicoding/mcp-servers/blob/main/docs/local-mcp-system.md) | Default MCP surface, CLI/MCP boundary, disabled MCP categories, and maintenance commands. |
 
 ## Migration Candidates
 

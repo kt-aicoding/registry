@@ -13,7 +13,7 @@ Command-line utilities for configuring and operating AI coding environments.
 
 | Document | Notes |
 | --- | --- |
-| [Local CLI And MCP System](local-cli-mcp-system.md) | Current local CLI layers, provider login state, MCP policy, and maintenance commands. |
+| [Local CLI System](https://github.com/kt-aicoding/cli-tools/blob/main/docs/local-cli-system.md) | Current CLI layers, provider login state, repository placement, maintenance commands, and upgrade policy. |
 
 ## Migration Candidates
 
