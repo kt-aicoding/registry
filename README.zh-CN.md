@@ -4,7 +4,13 @@
 
 # KT AI Coding Registry
 
-KT AI Coding 项目索引：Skills、MCP Servers、CLI 工具和 Agent 工作流模板。
+KT AI Coding 的组织级索引，用来维护 Skills、MCP Servers、CLI 工具和 Agent 工作流模板之间的边界、入口和迁移方向。
+
+这个仓库不承载具体实现。它负责回答三个问题：
+
+- 某类 AI Coding 资产应该放在哪个仓库。
+- 当前有哪些仓库、目录和操作资料可以作为入口。
+- 哪些项目适合迁入 `kt-aicoding`，哪些应该留在其他组织或归档。
 
 ## 分类
 
@@ -14,6 +20,17 @@ KT AI Coding 项目索引：Skills、MCP Servers、CLI 工具和 Agent 工作流
 | MCP Servers | 服务 AI 编程工作流的 Model Context Protocol 服务 | [kt-aicoding/mcp-servers](https://github.com/kt-aicoding/mcp-servers), [catalog/mcp-servers.md](catalog/mcp-servers.md) |
 | CLI Tools | 配置和操作 AI 编程环境的命令行工具 | [kt-aicoding/cli-tools](https://github.com/kt-aicoding/cli-tools), [catalog/cli-tools.md](catalog/cli-tools.md) |
 | Agent Workflows | 多 Agent 和自动化工作流模板 | [kt-aicoding/agent-workflows](https://github.com/kt-aicoding/agent-workflows), [catalog/agent-workflows.md](catalog/agent-workflows.md) |
+
+## 快速入口
+
+| 需要做什么 | 去哪里 |
+| --- | --- |
+| 查 CLI 工具和本地 CLI 体系 | [kt-aicoding/cli-tools](https://github.com/kt-aicoding/cli-tools) |
+| 查 MCP server 和 MCP 治理原则 | [kt-aicoding/mcp-servers](https://github.com/kt-aicoding/mcp-servers) |
+| 查可复用 Agent skill | [kt-aicoding/skills](https://github.com/kt-aicoding/skills) |
+| 查多 Agent / 自动化工作流模板 | [kt-aicoding/agent-workflows](https://github.com/kt-aicoding/agent-workflows) |
+| 查 Claude Code / Codex 配置套件 | [kt-aicoding/claudecode-codex-config](https://github.com/kt-aicoding/claudecode-codex-config) |
+| 查跨类别索引和迁移候选 | 本仓库 |
 
 ## 初始迁移候选
 
@@ -34,7 +51,7 @@ KT AI Coding 项目索引：Skills、MCP Servers、CLI 工具和 Agent 工作流
 
 | 文档 | 说明 |
 | --- | --- |
-| [本地 CLI/MCP 工具体系](catalog/local-cli-mcp-system.md) | Kevin 当前 CLI/MCP 运行模型、平台登录态和维护命令。 |
+| [本地 CLI/MCP 工具体系索引](catalog/local-cli-mcp-system.md) | 指向 CLI 和 MCP 专属仓库里的详细治理文档。 |
 
 ## 仓库规范
 
@@ -42,3 +59,4 @@ KT AI Coding 项目索引：Skills、MCP Servers、CLI 工具和 Agent 工作流
 - 小型 skills 和模板优先放在 monorepo。
 - 成熟的 MCP server 和 CLI 可以独立成仓。
 - 泛 AI 应用、创意项目和实验性 demo 继续保留在 `kevinten-ai`。
+- 本仓库只保存公开安全的索引信息，不保存 token、cookie、私有路径或私有业务上下文。
