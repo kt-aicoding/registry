@@ -10,6 +10,15 @@ This page is the registry-level index for Kevin's local CLI and MCP operating mo
 | --- | --- | --- |
 | CLI tools and provider CLI operations | [`kt-aicoding/cli-tools`](https://github.com/kt-aicoding/cli-tools) | [`docs/local-cli-system.md`](https://github.com/kt-aicoding/cli-tools/blob/main/docs/local-cli-system.md) |
 | MCP server policy and CLI/MCP boundary | [`kt-aicoding/mcp-servers`](https://github.com/kt-aicoding/mcp-servers) | [`docs/local-mcp-system.md`](https://github.com/kt-aicoding/mcp-servers/blob/main/docs/local-mcp-system.md) |
+| Agent governance skills | [`kt-aicoding/skills`](https://github.com/kt-aicoding/skills) | [`catalog/skills.md`](skills.md) |
+
+## Related Skills
+
+| Skill | Use |
+| --- | --- |
+| [`cli-tooling-governance`](https://github.com/kt-aicoding/skills/blob/main/skills/codex/cli-tooling-governance/SKILL.md) | CLI placement, maturity, verification, and upgrade decisions. |
+| [`mcp-surface-governance`](https://github.com/kt-aicoding/skills/blob/main/skills/codex/mcp-surface-governance/SKILL.md) | MCP versus CLI boundary and MCP tool surface design. |
+| [`kt-aicoding-registry`](https://github.com/kt-aicoding/skills/blob/main/skills/codex/kt-aicoding-registry/SKILL.md) | Repository routing and catalog consistency. |
 
 ## Registry Summary
 

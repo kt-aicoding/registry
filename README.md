@@ -32,6 +32,14 @@ KT AI Coding 的组织级索引，用来维护 Skills、MCP Servers、CLI 工具
 | 查 Claude Code / Codex 配置套件 | [kt-aicoding/claudecode-codex-config](https://github.com/kt-aicoding/claudecode-codex-config) |
 | 查跨类别索引和迁移候选 | 本仓库 |
 
+## 治理 Skills
+
+| Skill | 用途 |
+| --- | --- |
+| [`cli-tooling-governance`](https://github.com/kt-aicoding/skills/blob/main/skills/codex/cli-tooling-governance/SKILL.md) | 判断 CLI、脚本、MCP、skill 和独立仓库边界。 |
+| [`mcp-surface-governance`](https://github.com/kt-aicoding/skills/blob/main/skills/codex/mcp-surface-governance/SKILL.md) | 判断能力是否适合做 MCP，并设计小而安全的 tool surface。 |
+| [`kt-aicoding-registry`](https://github.com/kt-aicoding/skills/blob/main/skills/codex/kt-aicoding-registry/SKILL.md) | 判断 AI coding 资产应归属哪个仓库，并维护 catalog 一致性。 |
+
 ## 判断方法
 
 当一个新资产准备进入 `kt-aicoding` 时，先按下面的规则判断归属：
