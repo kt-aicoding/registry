@@ -12,10 +12,10 @@ Canonical index for KT AI Coding projects: skills, MCP servers, CLI tools, and a
 
 | Category | Purpose | Catalog |
 | --- | --- | --- |
-| Skills | Reusable instructions and workflows for AI coding agents | [catalog/skills.md](catalog/skills.md) |
-| MCP Servers | Model Context Protocol servers for coding workflows | [catalog/mcp-servers.md](catalog/mcp-servers.md) |
-| CLI Tools | Command-line utilities for AI coding environments | [catalog/cli-tools.md](catalog/cli-tools.md) |
-| Agent Workflows | Multi-agent and automation templates | [catalog/agent-workflows.md](catalog/agent-workflows.md) |
+| Skills | Reusable instructions and workflows for AI coding agents | [kt-aicoding/skills](https://github.com/kt-aicoding/skills), [catalog/skills.md](catalog/skills.md) |
+| MCP Servers | Model Context Protocol servers for coding workflows | [kt-aicoding/mcp-servers](https://github.com/kt-aicoding/mcp-servers), [catalog/mcp-servers.md](catalog/mcp-servers.md) |
+| CLI Tools | Command-line utilities for AI coding environments | [kt-aicoding/cli-tools](https://github.com/kt-aicoding/cli-tools), [catalog/cli-tools.md](catalog/cli-tools.md) |
+| Agent Workflows | Multi-agent and automation templates | [kt-aicoding/agent-workflows](https://github.com/kt-aicoding/agent-workflows), [catalog/agent-workflows.md](catalog/agent-workflows.md) |
 
 ## Initial Migration Candidates
 

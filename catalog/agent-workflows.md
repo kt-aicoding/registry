@@ -2,9 +2,8 @@
 
 Templates and examples for coding-agent orchestration, review, debugging, and automation.
 
-## Planned Repositories
+## Repositories
 
 | Repository | Status | Notes |
 | --- | --- | --- |
-| `agent-workflows` | planned | Reusable workflow templates for coding, review, research, and release automation. |
-
+| [`kt-aicoding/agent-workflows`](https://github.com/kt-aicoding/agent-workflows) | created | Reusable workflow templates for coding, review, research, and release automation. |

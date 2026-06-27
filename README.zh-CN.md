@@ -10,10 +10,10 @@ KT AI Coding 项目索引：Skills、MCP Servers、CLI 工具和 Agent 工作流
 
 | 分类 | 用途 | 目录 |
 | --- | --- | --- |
-| Skills | 面向 AI 编程 Agent 的可复用指令和工作流 | [catalog/skills.md](catalog/skills.md) |
-| MCP Servers | 服务 AI 编程工作流的 Model Context Protocol 服务 | [catalog/mcp-servers.md](catalog/mcp-servers.md) |
-| CLI Tools | 配置和操作 AI 编程环境的命令行工具 | [catalog/cli-tools.md](catalog/cli-tools.md) |
-| Agent Workflows | 多 Agent 和自动化工作流模板 | [catalog/agent-workflows.md](catalog/agent-workflows.md) |
+| Skills | 面向 AI 编程 Agent 的可复用指令和工作流 | [kt-aicoding/skills](https://github.com/kt-aicoding/skills), [catalog/skills.md](catalog/skills.md) |
+| MCP Servers | 服务 AI 编程工作流的 Model Context Protocol 服务 | [kt-aicoding/mcp-servers](https://github.com/kt-aicoding/mcp-servers), [catalog/mcp-servers.md](catalog/mcp-servers.md) |
+| CLI Tools | 配置和操作 AI 编程环境的命令行工具 | [kt-aicoding/cli-tools](https://github.com/kt-aicoding/cli-tools), [catalog/cli-tools.md](catalog/cli-tools.md) |
+| Agent Workflows | 多 Agent 和自动化工作流模板 | [kt-aicoding/agent-workflows](https://github.com/kt-aicoding/agent-workflows), [catalog/agent-workflows.md](catalog/agent-workflows.md) |
 
 ## 初始迁移候选
 
@@ -30,4 +30,3 @@ KT AI Coding 项目索引：Skills、MCP Servers、CLI 工具和 Agent 工作流
 - 小型 skills 和模板优先放在 monorepo。
 - 成熟的 MCP server 和 CLI 可以独立成仓。
 - 泛 AI 应用、创意项目和实验性 demo 继续保留在 `kevinten-ai`。
-

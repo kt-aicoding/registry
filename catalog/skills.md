@@ -2,11 +2,11 @@
 
 Reusable skills for AI coding agents.
 
-## Planned Repositories
+## Repositories
 
 | Repository | Status | Notes |
 | --- | --- | --- |
-| `skills` | planned | Monorepo for Codex, Claude Code, and editor-agent skills. |
+| [`kt-aicoding/skills`](https://github.com/kt-aicoding/skills) | created | Monorepo for Codex, Claude Code, and editor-agent skills. |
 
 ## Candidate Structure
 
@@ -16,4 +16,3 @@ skills/
   claude-code/
   shared/
 ```
-

@@ -2,6 +2,12 @@
 
 Model Context Protocol servers for AI coding workflows.
 
+## Repositories
+
+| Repository | Status | Notes |
+| --- | --- | --- |
+| [`kt-aicoding/mcp-servers`](https://github.com/kt-aicoding/mcp-servers) | created | Staging monorepo for MCP servers before mature servers graduate into standalone repos. |
+
 ## Migration Candidates
 
 | Repository | Current Location | Status | Notes |
@@ -11,4 +17,3 @@ Model Context Protocol servers for AI coding workflows.
 | `mcp-content-styles` | `kevinten-ai/mcp-content-styles` | reference | MCP-related, but not necessarily AI coding specific. |
 | `mcp-image-gen` | `kevinten-ai/mcp-image-gen` | reference | MCP-related, but broader than coding. |
 | `mcp-ffmpeg` | `kevinten-ai/mcp-ffmpeg` | reference | MCP-related, but broader than coding. |
-
