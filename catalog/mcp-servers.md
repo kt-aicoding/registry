@@ -8,6 +8,12 @@ Model Context Protocol servers for AI coding workflows.
 | --- | --- | --- |
 | [`kt-aicoding/mcp-servers`](https://github.com/kt-aicoding/mcp-servers) | created | Staging monorepo for MCP servers before mature servers graduate into standalone repos. |
 
+## Operating References
+
+| Document | Notes |
+| --- | --- |
+| [Local CLI And MCP System](local-cli-mcp-system.md) | Default MCP surface is intentionally minimal: `context7` for current docs and `playwright` for browser automation. Provider MCPs are not default-enabled when mature CLIs cover the workflow. |
+
 ## Migration Candidates
 
 | Repository | Current Location | Status | Notes |

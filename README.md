@@ -30,7 +30,13 @@ Canonical index for KT AI Coding projects: skills, MCP servers, CLI tools, and a
 
 | Project | Category | Notes |
 | --- | --- | --- |
-| [cc-codex-config](https://github.com/kt-aicoding/cc-codex-config) | CLI Tools | Claude Code and Codex CLI configuration kit: preferences, status line, installer, and skill. |
+| [claudecode-codex-config](https://github.com/kt-aicoding/claudecode-codex-config) | CLI Tools | Claude Code and Codex CLI configuration kit: preferences, status line, installer, and skill. |
+
+## Operating References
+
+| Document | Notes |
+| --- | --- |
+| [Local CLI And MCP System](catalog/local-cli-mcp-system.md) | Kevin's current CLI/MCP operating model, provider login state, and maintenance commands. |
 
 ## Repository Guidelines
 

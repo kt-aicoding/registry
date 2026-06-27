@@ -8,4 +8,4 @@
 | [mcp-servers.md](mcp-servers.md) | MCP Servers |
 | [cli-tools.md](cli-tools.md) | CLI Tools |
 | [agent-workflows.md](agent-workflows.md) | Agent Workflows |
-
+| [local-cli-mcp-system.md](local-cli-mcp-system.md) | 本地 CLI/MCP 工具体系、登录态和治理原则 |

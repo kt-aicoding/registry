@@ -7,7 +7,13 @@ Command-line utilities for configuring and operating AI coding environments.
 | Repository | Status | Notes |
 | --- | --- | --- |
 | [`kt-aicoding/cli-tools`](https://github.com/kt-aicoding/cli-tools) | created | Staging monorepo for small AI coding CLI tools. |
-| [`kt-aicoding/cc-codex-config`](https://github.com/kt-aicoding/cc-codex-config) | created | Claude Code and Codex CLI configuration kit: preferences, status line, installer, and skill. |
+| [`kt-aicoding/claudecode-codex-config`](https://github.com/kt-aicoding/claudecode-codex-config) | created | Claude Code and Codex CLI configuration kit: preferences, status line, installer, and skill. |
+
+## Operating References
+
+| Document | Notes |
+| --- | --- |
+| [Local CLI And MCP System](local-cli-mcp-system.md) | Current local CLI layers, provider login state, MCP policy, and maintenance commands. |
 
 ## Migration Candidates
 
@@ -19,4 +25,4 @@ Command-line utilities for configuring and operating AI coding environments.
 
 | Repository | Status | Notes |
 | --- | --- | --- |
-| `cc-codex-config` | active | Shared home for Claude Code and Codex config presets, profiles, status line, and setup helpers. |
+| `claudecode-codex-config` | active | Shared home for Claude Code and Codex config presets, profiles, status line, and setup helpers. |
