@@ -79,6 +79,7 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 | 2026-06-28 | CLI inventory | Completed the Cloudflare resource snapshot in CLI operating docs. | `cli-tools@bec1dee`; remote `main` verified through `git ls-remote` and GitHub API. |
 | 2026-06-28 | workflows | Added reusable planning, pre-landing review, and multi-agent research workflow templates. | `agent-workflows@e0e0cd2`; verified with `git diff --check`, sensitive scan, GitHub API file check, and GitHub commits API after transient `ls-remote` SSL failure. |
 | 2026-06-28 | browser skills | Hardened JD and Taobao skill install guidance and local safety docs. | `skill-jd@57d2590`, `skill-taobao@e07bdab`; verified with `quick_validate.py`, `bash -n`, destructive-command refusal checks, GitHub API file checks, and remote `main` SHA checks. |
+| 2026-06-28 | completion audit | Rechecked every public `kt-aicoding` repository against GitHub REST `main` commits after the final pass. | 16 public repositories enumerated; all 16 local HEADs matched GitHub REST `main` commit SHAs; no raw local paths, account IDs, tokens, cookies, invoices, or payment details recorded. |
 
 ## Blockers
 
@@ -97,6 +98,7 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 - [x] Each repository has status: verified, inventoried, not applicable, external blocker, or private follow-up.
 - [x] Completed/inventoried repository items have validation evidence appropriate to this pass.
 - [x] Pushed repository items have remote refs matching local commits for this pass.
+- [x] Final public-repo audit matched all 16 local HEADs to GitHub REST `main` commit SHAs.
 - [x] Platform checks have current read-only evidence or blocker records, plus public-safe official pricing/free-tier references and dashboard recheck notes for billing-sensitive conclusions.
 - [x] Public docs passed sensitive-output scan for final committed scope; matches are safety-policy text or placeholders, not raw secrets.
 - [x] Remaining findings are classified as external blocker, private dashboard follow-up, or non-destructive future maintenance.
