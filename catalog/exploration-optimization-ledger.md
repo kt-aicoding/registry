@@ -21,7 +21,7 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 | Repository | Local path | Remote | Branch | Dirty status | Status | Evidence / next action |
 | --- | --- | --- | --- | --- | --- | --- |
 | `.github` | `<WORKSPACE_ROOT>/kt-aicoding-dotgithub` | `kt-aicoding/.github` | `main` | clean | inventoried | Organization profile repo; cataloged under supporting resources. |
-| `agent-workflows` | `<WORKSPACE_ROOT>/agent-workflows` | `kt-aicoding/agent-workflows` | `main` | clean | inventoried | Cataloged under agent workflows. |
+| `agent-workflows` | `<WORKSPACE_ROOT>/agent-workflows` | `kt-aicoding/agent-workflows` | `main` | clean | verified | Reusable planning, review, and multi-agent research workflow templates added; local HEAD matches remote `main`. |
 | `agents` | `<WORKSPACE_ROOT>/agents` | `kt-aicoding/agents` | `main` | clean | verified | Local HEAD `8cb0c4c` matches remote `main`; existing dirty state has been resolved before this pass. |
 | `claudecode-codex-config` | `<WORKSPACE_ROOT>/claudecode-codex-config` | `kt-aicoding/claudecode-codex-config` | `main` | clean | verified | Installer now supports `--dry-run`; README local development commands use dry-run/temp install; unit tests and temp install validation passed; local HEAD matches remote `main`. |
 | `claudecode-codex-switch` | `<WORKSPACE_ROOT>/claudecode-codex-switch` | `kt-aicoding/claudecode-codex-switch` | `main` | clean | verified | README already has one-line install and copy-paste usage; `tests/smoke.sh`, `bash -n`, and README SVG validation passed; remote `main` verified through GitHub API after transient TLS failures. |
@@ -33,8 +33,8 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 | `registry` | `<WORKSPACE_ROOT>/registry` | `kt-aicoding/registry` | `main` | clean | verified | Goal file, ledger, and catalog updates are pushed and verified. |
 | `skill-goal` | `<WORKSPACE_ROOT>/skill-goal` | `kt-aicoding/skill-goal` | `main` | clean | verified | README now includes one-line install and portable validation command; `quick_validate.py goal-prompt` passed; local HEAD matches remote `main`. |
 | `skill-image` | `<WORKSPACE_ROOT>/skill-image` | `kt-aicoding/skill-image` | `main` | clean | verified | README now includes one-line install and portable validation command; `quick_validate.py skill/skill-image`, `bash -n`, and remote README check passed; local HEAD matches remote `main`. |
-| `skill-jd` | `<WORKSPACE_ROOT>/skill-jd` | `kt-aicoding/skill-jd` | `main` | clean | verified | `quick_validate.py .` passed; local HEAD matches remote `main`. |
-| `skill-taobao` | `<WORKSPACE_ROOT>/skill-taobao` | `kt-aicoding/skill-taobao` | `main` | clean | verified | `quick_validate.py .` passed; local HEAD matches remote `main`. |
+| `skill-jd` | `<WORKSPACE_ROOT>/skill-jd` | `kt-aicoding/skill-jd` | `main` | clean | verified | Install guidance hardened, `AGENTS.md` added, `quick_validate.py .`, `bash -n`, and destructive-command refusal check passed; local HEAD matches remote `main`. |
+| `skill-taobao` | `<WORKSPACE_ROOT>/skill-taobao` | `kt-aicoding/skill-taobao` | `main` | clean | verified | Install guidance hardened, `.gitignore` added, `quick_validate.py .`, `bash -n`, and destructive-command refusal check passed; local HEAD matches remote `main`. |
 | `skills` | `<WORKSPACE_ROOT>/kt-aicoding-skills` | `kt-aicoding/skills` | `main` | clean | verified | README now includes one-line install and validation loop; `goal-prompt-builder` secret guidance was tightened; all Codex skills passed `quick_validate.py`; local HEAD matches remote `main`. |
 
 ## Platform Inventory
@@ -77,6 +77,8 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 | 2026-06-28 | validation | Revalidated the model/provider switcher without code changes. | `claudecode-codex-switch@a9466e0`; `bash tests/smoke.sh`, `bash -n`, and `xmllint` passed; remote `main` verified through GitHub API. |
 | 2026-06-28 | governance | Added validation entrypoints to CLI/MCP governance repos and install/validation guidance to the skills repo. | `cli-tools@19fca15`, `mcp-servers@127fc1a`, `skills@0e16658`; verified with `git diff --check`, sensitive scans, `quick_validate.py`, GitHub API file checks, and `git ls-remote origin main`. |
 | 2026-06-28 | CLI inventory | Completed the Cloudflare resource snapshot in CLI operating docs. | `cli-tools@bec1dee`; remote `main` verified through `git ls-remote` and GitHub API. |
+| 2026-06-28 | workflows | Added reusable planning, pre-landing review, and multi-agent research workflow templates. | `agent-workflows@e0e0cd2`; verified with `git diff --check`, sensitive scan, GitHub API file check, and GitHub commits API after transient `ls-remote` SSL failure. |
+| 2026-06-28 | browser skills | Hardened JD and Taobao skill install guidance and local safety docs. | `skill-jd@57d2590`, `skill-taobao@e07bdab`; verified with `quick_validate.py`, `bash -n`, destructive-command refusal checks, GitHub API file checks, and remote `main` SHA checks. |
 
 ## Blockers
 
