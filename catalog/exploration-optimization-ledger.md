@@ -84,6 +84,7 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 | --- | --- | --- | --- | --- | --- |
 | 2026-06-28 | GitHub GraphQL | `gh repo list kt-aicoding --limit 100 ...` | transient `EOF`; later REST API query succeeded | None for repository inventory | Yes |
 | 2026-06-28 | Railway | `railway whoami` | unauthorized | Run `railway login` only when Railway resource checks are needed | Yes |
+| 2026-06-28 | Private billing dashboards | Exact current invoice/usage dollar checks for Vercel, Supabase, Cloudflare, CloudBase, Railway, and GitHub | Not inspected because this public reference must avoid private billing, invoice, account, and payment details without explicit user approval | Use provider dashboards with the user present; record only redacted conclusions if needed. | Yes |
 | 2026-06-28 | Local workspace | Edit `agents` or `hermes` | Earlier dirty worktrees were detected; current pass shows both repos clean and remote-matched | No blocker remains for inventory; do a focused review before future edits. | Yes |
 
 ## Completion Audit
@@ -91,9 +92,9 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 - [x] Objective and instruction file reread after latest resume.
 - [x] In-scope `kt-aicoding` repositories enumerated from current remote state.
 - [x] Core local repository dirty status recorded.
-- [x] Each repository has status: inventoried, deferred, in progress, not applicable, or externally blocked.
+- [x] Each repository has status: verified, inventoried, not applicable, external blocker, or private follow-up.
 - [x] Completed/inventoried repository items have validation evidence appropriate to this pass.
 - [x] Pushed repository items have remote refs matching local commits for this pass.
 - [x] Platform checks have current read-only evidence or blocker records, plus public-safe official pricing/free-tier references and dashboard recheck notes for billing-sensitive conclusions.
 - [x] Public docs passed sensitive-output scan for final committed scope; matches are safety-policy text or placeholders, not raw secrets.
-- [x] Remaining findings are classified as in-progress, deferred dirty worktree, external blocker, or non-destructive follow-up.
+- [x] Remaining findings are classified as external blocker, private dashboard follow-up, or non-destructive future maintenance.

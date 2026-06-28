@@ -43,11 +43,15 @@ This is a public, sanitized operating reference for AI coding infrastructure cos
 - Treat Railway as unknown until login is refreshed.
 - For dashboard-only billing pages, record only plan/usage conclusions and source names, not account identifiers, invoice details, or payment information.
 
-## Follow-Up Checklist
+## Private Dashboard Follow-Up
 
-- [ ] Vercel dashboard: confirm Usage and Invoices for the current billing period.
-- [ ] Supabase dashboard: confirm organization plan, invoices, and usage overage.
-- [ ] Cloudflare dashboard: confirm Workers plan, R2 storage/ops, D1 row reads/writes/storage, KV ops/storage, Queues ops.
-- [ ] CloudBase console: confirm package renewal, auto-renewal, and pay-as-you-go usage.
-- [ ] Railway CLI/dashboard: re-authenticate and confirm whether any projects/services exist.
-- [ ] GitHub billing: check private Actions/Packages usage if private repos or paid runners are active.
+These checks require private billing dashboards, invoice pages, or refreshed provider auth. They are not required for this public-safe reference, but they are the next source of truth for exact dollar amounts.
+
+| Platform | Private follow-up |
+| --- | --- |
+| Vercel | Confirm Usage and Invoices for the current billing period. |
+| Supabase | Confirm organization plan, invoices, and usage overage. |
+| Cloudflare | Confirm Workers plan, R2 storage/ops, D1 row reads/writes/storage, KV ops/storage, and Queues ops. |
+| CloudBase | Confirm package renewal, auto-renewal, and pay-as-you-go usage. |
+| Railway | Re-authenticate and confirm whether any projects/services exist. |
+| GitHub | Check private Actions/Packages usage if private repos or paid runners are active. |
