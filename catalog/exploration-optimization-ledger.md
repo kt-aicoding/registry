@@ -28,11 +28,11 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 | `claws` | `<WORKSPACE_ROOT>/claws` | `kt-aicoding/claws` | `main` | clean | inventoried | Cataloged under operations. |
 | `cli-tools` | `<WORKSPACE_ROOT>/cli-tools` | `kt-aicoding/cli-tools` | `main` | clean | inventoried | Current provider CLI state refresh pending commit. |
 | `hermes` | `<WORKSPACE_ROOT>/hermes` | `kt-aicoding/hermes` | `main` | clean | verified | Local HEAD `18d7939` matches remote `main`; existing dirty state has been resolved before this pass. |
-| `images` | `<WORKSPACE_ROOT>/images` | `kt-aicoding/images` | `main` | clean | inventoried | Cataloged under supporting resources. |
+| `images` | `<WORKSPACE_ROOT>/images` | `kt-aicoding/images` | `main` | clean | verified | README now includes project-type image usage guidance; SVG export script and example asset validated; local HEAD matches remote `main`. |
 | `mcp-servers` | `<WORKSPACE_ROOT>/mcp-servers` | `kt-aicoding/mcp-servers` | `main` | clean | inventoried | MCP docs already link governance skill. |
 | `registry` | `<WORKSPACE_ROOT>/registry` | `kt-aicoding/registry` | `main` | clean | verified | Goal file, ledger, and catalog updates are pushed and verified. |
-| `skill-goal` | `<WORKSPACE_ROOT>/skill-goal` | `kt-aicoding/skill-goal` | `main` | clean | verified | `quick_validate.py goal-prompt` passed; local HEAD matches remote `main`. |
-| `skill-image` | `<WORKSPACE_ROOT>/skill-image` | `kt-aicoding/skill-image` | `main` | clean | verified | `quick_validate.py skill/skill-image`, `bash -n`, and recommendation smoke command passed; local HEAD matches remote `main`. |
+| `skill-goal` | `<WORKSPACE_ROOT>/skill-goal` | `kt-aicoding/skill-goal` | `main` | clean | verified | README now includes one-line install and portable validation command; `quick_validate.py goal-prompt` passed; local HEAD matches remote `main`. |
+| `skill-image` | `<WORKSPACE_ROOT>/skill-image` | `kt-aicoding/skill-image` | `main` | clean | verified | README now includes one-line install and portable validation command; `quick_validate.py skill/skill-image`, `bash -n`, and remote README check passed; local HEAD matches remote `main`. |
 | `skill-jd` | `<WORKSPACE_ROOT>/skill-jd` | `kt-aicoding/skill-jd` | `main` | clean | verified | `quick_validate.py .` passed; local HEAD matches remote `main`. |
 | `skill-taobao` | `<WORKSPACE_ROOT>/skill-taobao` | `kt-aicoding/skill-taobao` | `main` | clean | verified | `quick_validate.py .` passed; local HEAD matches remote `main`. |
 | `skills` | `<WORKSPACE_ROOT>/kt-aicoding-skills` | `kt-aicoding/skills` | `main` | clean | inventoried | Governance skills pass; `goal-prompt-builder` added to catalog. |
@@ -71,6 +71,7 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 | 2026-06-28 | platform | Ran read-only platform auth/resource checks. | CLI summaries in Platform Inventory. |
 | 2026-06-28 | validation | Verified all clean local `kt-aicoding` repo heads against remote `main`; retried transient `ls-remote` failures through GitHub REST API. | Local/remote SHA checks for 16 repos; API checks for `claudecode-codex-config`, `claudecode-codex-switch`, and `claws`. |
 | 2026-06-28 | validation | Revalidated standalone skill repositories. | `skill-goal`, `skill-image`, `skill-jd`, and `skill-taobao` all passed `quick_validate.py`; `skill-image` helper script also passed `bash -n` and smoke output. |
+| 2026-06-28 | docs | Added copy-paste install/use guidance for image and goal skills, plus project-type image asset guidance. | `skill-image@4a7f215`, `images@83c4223`, `skill-goal@6bf2895`; verified with skill validators, SVG/export checks, sensitive scans, GitHub API README checks, and `git ls-remote origin main`. |
 
 ## Blockers
 
