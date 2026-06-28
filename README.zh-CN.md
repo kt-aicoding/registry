@@ -20,6 +20,8 @@ KT AI Coding 的组织级索引，用来维护 Skills、MCP Servers、CLI 工具
 | MCP Servers | 服务 AI 编程工作流的 Model Context Protocol 服务 | [kt-aicoding/mcp-servers](https://github.com/kt-aicoding/mcp-servers), [catalog/mcp-servers.md](catalog/mcp-servers.md) |
 | CLI Tools | 配置和操作 AI 编程环境的命令行工具 | [kt-aicoding/cli-tools](https://github.com/kt-aicoding/cli-tools), [catalog/cli-tools.md](catalog/cli-tools.md) |
 | Agent Workflows | 多 Agent 和自动化工作流模板 | [kt-aicoding/agent-workflows](https://github.com/kt-aicoding/agent-workflows), [catalog/agent-workflows.md](catalog/agent-workflows.md) |
+| Operations | AI coding agent 运行、迁移、cron 和本地服务运维实践 | [catalog/operations.md](catalog/operations.md) |
+| Supporting Resources | 组织 profile、视觉资产和配图资料 | [catalog/supporting-resources.md](catalog/supporting-resources.md) |
 
 ## 快速入口
 
@@ -30,6 +32,9 @@ KT AI Coding 的组织级索引，用来维护 Skills、MCP Servers、CLI 工具
 | 查可复用 Agent skill | [kt-aicoding/skills](https://github.com/kt-aicoding/skills) |
 | 查多 Agent / 自动化工作流模板 | [kt-aicoding/agent-workflows](https://github.com/kt-aicoding/agent-workflows) |
 | 查 Claude Code / Codex 配置套件 | [kt-aicoding/claudecode-codex-config](https://github.com/kt-aicoding/claudecode-codex-config) |
+| 查 agent 指令实践 | [kt-aicoding/agents](https://github.com/kt-aicoding/agents) |
+| 查 OpenClaw / Hermes 运维实践 | [catalog/operations.md](catalog/operations.md) |
+| 查 README 配图和视觉资产资料 | [kt-aicoding/images](https://github.com/kt-aicoding/images) |
 | 查跨类别索引和迁移候选 | 本仓库 |
 
 ## 判断方法
@@ -59,6 +64,15 @@ KT AI Coding 的组织级索引，用来维护 Skills、MCP Servers、CLI 工具
 | 项目 | 分类 | 说明 |
 | --- | --- | --- |
 | [claudecode-codex-config](https://github.com/kt-aicoding/claudecode-codex-config) | CLI Tools | Claude Code 和 Codex CLI 配置套件：偏好、状态栏、安装脚本和 Skill。 |
+| [claudecode-codex-switch](https://github.com/kt-aicoding/claudecode-codex-switch) | CLI Tools | Claude Code 与 Codex CLI 的 provider/profile 切换工具。 |
+| [skill-goal](https://github.com/kt-aicoding/skill-goal) | Skills | `goal-prompt` 独立 skill，用于长期目标提示词和 file-backed goal。 |
+| [skill-image](https://github.com/kt-aicoding/skill-image) | Skills | 选择 README 图示、截图、logo、banner 和视觉资产工具的 skill。 |
+| [skill-jd](https://github.com/kt-aicoding/skill-jd) | Skills | 京东低频、可监督浏览器自动化购物辅助 skill。 |
+| [skill-taobao](https://github.com/kt-aicoding/skill-taobao) | Skills | 淘宝低频、可监督浏览器自动化购物辅助 skill。 |
+| [agents](https://github.com/kt-aicoding/agents) | Agent Workflows | `AGENTS.md` / `CLAUDE.md` 实践、模板、迁移指南和语料治理。 |
+| [claws](https://github.com/kt-aicoding/claws) | Operations | OpenClaw 运维、cron 修复和 fleet 治理手册。 |
+| [hermes](https://github.com/kt-aicoding/hermes) | Operations | Hermes Agent 本地迁移、cron、launchd 和验证实践。 |
+| [images](https://github.com/kt-aicoding/images) | Supporting Resources | README 配图、SVG 图示、生图工具和视觉资产资料库。 |
 
 ## 操作资料
 
@@ -66,6 +80,7 @@ KT AI Coding 的组织级索引，用来维护 Skills、MCP Servers、CLI 工具
 | --- | --- |
 | [目录索引](catalog/README.zh-CN.md) | Skills、MCP Servers、CLI Tools、Agent Workflows 和操作资料的分类入口。 |
 | [本地 CLI/MCP 工具体系索引](catalog/local-cli-mcp-system.md) | 指向 CLI 和 MCP 专属仓库里的详细治理文档。 |
+| [全面探索和优化 Ledger](catalog/exploration-optimization-ledger.md) | 当前 goal 的仓库、平台、验证和 blocker 记录。 |
 
 ## 仓库规范
 

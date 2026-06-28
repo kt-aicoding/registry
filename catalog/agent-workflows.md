@@ -7,3 +7,4 @@ Templates and examples for coding-agent orchestration, review, debugging, and au
 | Repository | Status | Notes |
 | --- | --- | --- |
 | [`kt-aicoding/agent-workflows`](https://github.com/kt-aicoding/agent-workflows) | created | Reusable workflow templates for coding, review, research, and release automation. |
+| [`kt-aicoding/agents`](https://github.com/kt-aicoding/agents) | created | Practical `AGENTS.md` / `CLAUDE.md` patterns, migration guide, templates, and corpus governance. |
