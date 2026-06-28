@@ -23,8 +23,8 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 | `.github` | `<WORKSPACE_ROOT>/kt-aicoding-dotgithub` | `kt-aicoding/.github` | `main` | clean | inventoried | Organization profile repo; cataloged under supporting resources. |
 | `agent-workflows` | `<WORKSPACE_ROOT>/agent-workflows` | `kt-aicoding/agent-workflows` | `main` | clean | inventoried | Cataloged under agent workflows. |
 | `agents` | `<WORKSPACE_ROOT>/agents` | `kt-aicoding/agents` | `main` | clean | verified | Local HEAD `8cb0c4c` matches remote `main`; existing dirty state has been resolved before this pass. |
-| `claudecode-codex-config` | `<WORKSPACE_ROOT>/claudecode-codex-config` | `kt-aicoding/claudecode-codex-config` | `main` | clean | inventoried | Cataloged under CLI tools. |
-| `claudecode-codex-switch` | `<WORKSPACE_ROOT>/claudecode-codex-switch` | `kt-aicoding/claudecode-codex-switch` | `main` | clean | inventoried | Added to CLI catalog; supersedes old `ccuse` migration candidate. |
+| `claudecode-codex-config` | `<WORKSPACE_ROOT>/claudecode-codex-config` | `kt-aicoding/claudecode-codex-config` | `main` | clean | verified | Installer now supports `--dry-run`; README local development commands use dry-run/temp install; unit tests and temp install validation passed; local HEAD matches remote `main`. |
+| `claudecode-codex-switch` | `<WORKSPACE_ROOT>/claudecode-codex-switch` | `kt-aicoding/claudecode-codex-switch` | `main` | clean | verified | README already has one-line install and copy-paste usage; `tests/smoke.sh`, `bash -n`, and README SVG validation passed; remote `main` verified through GitHub API after transient TLS failures. |
 | `claws` | `<WORKSPACE_ROOT>/claws` | `kt-aicoding/claws` | `main` | clean | inventoried | Cataloged under operations. |
 | `cli-tools` | `<WORKSPACE_ROOT>/cli-tools` | `kt-aicoding/cli-tools` | `main` | clean | inventoried | Current provider CLI state refresh pending commit. |
 | `hermes` | `<WORKSPACE_ROOT>/hermes` | `kt-aicoding/hermes` | `main` | clean | verified | Local HEAD `18d7939` matches remote `main`; existing dirty state has been resolved before this pass. |
@@ -72,6 +72,8 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 | 2026-06-28 | validation | Verified all clean local `kt-aicoding` repo heads against remote `main`; retried transient `ls-remote` failures through GitHub REST API. | Local/remote SHA checks for 16 repos; API checks for `claudecode-codex-config`, `claudecode-codex-switch`, and `claws`. |
 | 2026-06-28 | validation | Revalidated standalone skill repositories. | `skill-goal`, `skill-image`, `skill-jd`, and `skill-taobao` all passed `quick_validate.py`; `skill-image` helper script also passed `bash -n` and smoke output. |
 | 2026-06-28 | docs | Added copy-paste install/use guidance for image and goal skills, plus project-type image asset guidance. | `skill-image@4a7f215`, `images@83c4223`, `skill-goal@6bf2895`; verified with skill validators, SVG/export checks, sensitive scans, GitHub API README checks, and `git ls-remote origin main`. |
+| 2026-06-28 | config | Added safe `--dry-run` support to the claudecode/codex config installer and made local dev validation use dry-run/temp paths. | `claudecode-codex-config@26bf9ba`; verified with `python3 -m unittest`, installer help, dry-run, temp install, sensitive scan, GitHub API, and `git ls-remote origin main`. |
+| 2026-06-28 | validation | Revalidated the model/provider switcher without code changes. | `claudecode-codex-switch@a9466e0`; `bash tests/smoke.sh`, `bash -n`, and `xmllint` passed; remote `main` verified through GitHub API. |
 
 ## Blockers
 
