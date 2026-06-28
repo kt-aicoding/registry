@@ -67,6 +67,7 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 | 2026-06-28 | registry | Created current-state ledger. | `catalog/exploration-optimization-ledger.md` |
 | 2026-06-28 | registry | Verified catalog categories and repo coverage against current remote inventory. | `README*.md`, `catalog/skills.md`, `catalog/cli-tools.md`, `catalog/agent-workflows.md`, `catalog/operations.md`, `catalog/supporting-resources.md` |
 | 2026-06-28 | docs | Refreshed registry CLI/MCP index and CLI/MCP operating docs to 2026-06-28 evidence. | `catalog/local-cli-mcp-system.md`, `cli-tools/docs/local-cli-system.md`, `mcp-servers/docs/local-mcp-system.md` |
+| 2026-06-28 | publication | Pushed and verified registry, CLI, and MCP documentation refresh commits. | `registry@4f54db9`, `cli-tools@ba716fc`, `mcp-servers@7c0e958`; verified via GitHub API and `git ls-remote origin main`. |
 | 2026-06-28 | platform | Ran read-only platform auth/resource checks. | CLI summaries in Platform Inventory. |
 
 ## Blockers
@@ -84,7 +85,7 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 - [x] Core local repository dirty status recorded.
 - [x] Each repository has status: inventoried, deferred, in progress, not applicable, or externally blocked.
 - [x] Completed/inventoried repository items have validation evidence appropriate to this pass.
-- [ ] Pushed repository items have remote refs matching local commits.
+- [x] Pushed repository items have remote refs matching local commits for this pass.
 - [x] Platform checks have current read-only evidence or blocker records.
 - [x] Public docs passed sensitive-output scan for final committed scope; matches are safety-policy text or placeholders, not raw secrets.
 - [x] Remaining findings are classified as in-progress, deferred dirty worktree, external blocker, or non-destructive follow-up.
