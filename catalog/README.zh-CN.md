@@ -11,6 +11,7 @@
 | [operations.md](operations.md) | Agent 运行、cron、迁移和本地服务运维手册 |
 | [supporting-resources.md](supporting-resources.md) | 组织 profile、图片、图示和共享视觉资产 |
 | [local-cli-mcp-system.md](local-cli-mcp-system.md) | CLI/MCP 操作资料的组织级索引 |
+| [platform-cost-free-tiers.md](platform-cost-free-tiers.md) | 公开安全的平台成本、免费额度、资源和账单跟进资料 |
 | [exploration-optimization-ledger.md](exploration-optimization-ledger.md) | AI coding 工具体系探索和优化的当前状态 ledger |
 
 ## 治理 Skill 入口

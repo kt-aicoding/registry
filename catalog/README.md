@@ -11,6 +11,7 @@ This directory maintains the category index for KT AI Coding repositories and op
 | [operations.md](operations.md) | Agent runtime, cron, migration, and local operations playbooks |
 | [supporting-resources.md](supporting-resources.md) | Organization profile, images, diagrams, and shared visual resources |
 | [local-cli-mcp-system.md](local-cli-mcp-system.md) | Registry-level index for CLI and MCP operating docs |
+| [platform-cost-free-tiers.md](platform-cost-free-tiers.md) | Public-safe platform cost, free-tier, resource, and billing-follow-up reference |
 | [exploration-optimization-ledger.md](exploration-optimization-ledger.md) | Current-state ledger for AI coding system exploration and optimization |
 
 ## Governance Skill Entrypoints

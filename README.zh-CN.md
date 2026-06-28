@@ -80,6 +80,7 @@ KT AI Coding 的组织级索引，用来维护 Skills、MCP Servers、CLI 工具
 | --- | --- |
 | [目录索引](catalog/README.zh-CN.md) | Skills、MCP Servers、CLI Tools、Agent Workflows 和操作资料的分类入口。 |
 | [本地 CLI/MCP 工具体系索引](catalog/local-cli-mcp-system.md) | 指向 CLI 和 MCP 专属仓库里的详细治理文档。 |
+| [平台成本和免费额度参考](catalog/platform-cost-free-tiers.md) | 平台资源、免费额度、官方来源和账单跟进清单。 |
 | [全面探索和优化 Ledger](catalog/exploration-optimization-ledger.md) | 当前 goal 的仓库、平台、验证和 blocker 记录。 |
 
 ## 仓库规范
