@@ -10,8 +10,8 @@ This is a public, sanitized operating reference for AI coding infrastructure cos
 | --- | --- | --- | --- |
 | Vercel | verified | 4 projects visible from CLI | Hobby can still incur usage/add-on risk through metered resources; verify Usage and Invoices in dashboard. |
 | Supabase | verified | 1 active project visible; demo work consolidated into `kevinten10` | Project count risk is controlled; confirm organization plan and overage in Supabase Billing. |
-| Cloudflare | partially verified | Pages=1 and D1=1 parsed from read-only CLI checks; KV/R2/Queues JSON list commands were not parseable with the current `wrangler` invocation | Cloudflare remains an infra cost surface to monitor. Recheck KV/R2/Queues through supported CLI output or dashboard before making deletion, budget, or plan decisions. |
-| Netlify | partially verified | `netlify status` shows auth/current-directory state; `netlify sites:list --json` returned no parseable body in this run | Confirm site count, team plan, and credits in the Netlify dashboard before relying on cost conclusions. |
+| Cloudflare | verified with recheck note | `cli-tools/docs/local-cli-system.md` records Pages=1, KV=2, D1=1, R2=1, Queues=1 from 2026-06-28 read-only checks | Cloudflare is an infra cost surface to monitor. Use dashboard or supported CLI output before making deletion, budget, or plan decisions. |
+| Netlify | verified with recheck note | `cli-tools/docs/local-cli-system.md` records site list count 0; registry spot-check also confirmed auth/current-directory state | Confirm team plan and monthly credits in the Netlify dashboard before relying on cost conclusions. |
 | Fly.io | verified | apps list count is 0 | No apps found by CLI; confirm organization billing only if historical invoices exist. |
 | Railway | externally blocked | CLI reports unauthorized | Run `railway login` before resource or cost checks. |
 | CloudBase | verified | 1 normal personal environment visible | Confirm package renewal and pay-as-you-go usage in Tencent Cloud console. |
@@ -39,7 +39,7 @@ This is a public, sanitized operating reference for AI coding infrastructure cos
 - Use provider CLIs for read-only resource discovery, then provider dashboards for actual invoices and usage dollars.
 - Do not delete resources, change plans, set budgets, or enable hard limits without explicit user approval.
 - Keep Supabase demo development in the single `kevinten10` project unless the user explicitly approves a separate project.
-- Treat Cloudflare as a current infra cost surface because Pages and D1 are verified and KV/R2/Queues still need a supported CLI/dashboard recheck.
+- Treat Cloudflare as a current infra cost surface because Pages, KV, D1, R2, and Queues resources are recorded in the CLI system snapshot; dashboard usage is still authoritative for cost.
 - Treat Railway as unknown until login is refreshed.
 - For dashboard-only billing pages, record only plan/usage conclusions and source names, not account identifiers, invoice details, or payment information.
 

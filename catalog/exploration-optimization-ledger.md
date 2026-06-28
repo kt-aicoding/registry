@@ -14,7 +14,7 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 | Registry catalog | verified | `README.md`, `README.zh-CN.md`, `catalog/*.md` | Categories for operations and supporting resources are present; repo coverage now reflects current remote inventory. |
 | kt-aicoding repositories | inventoried | `env -u GH_TOKEN gh api 'orgs/kt-aicoding/repos?per_page=100&type=all&sort=updated'` | 16 public remote repos identified on 2026-06-28. |
 | CLI/MCP/docs/skills | verified | Local status checks, `quick_validate.py`, `codex mcp list`, `codex doctor --json` | Governance skills and standalone skill repos pass; default MCP remains `context7` + `playwright`; CLI/MCP operating docs refreshed to 2026-06-28. |
-| Platform resources/cost notes | partially verified | `catalog/platform-cost-free-tiers.md`; read-only CLI checks; official pricing/free-tier sources | Public-safe platform cost reference created. No destructive or paid actions performed. Railway remains an auth blocker; Cloudflare KV/R2/Queues and Netlify site count need dashboard or supported CLI recheck. |
+| Platform resources/cost notes | verified with recheck notes | `catalog/platform-cost-free-tiers.md`; `cli-tools/docs/local-cli-system.md`; official pricing/free-tier sources | Public-safe platform cost reference created. No destructive or paid actions performed. Railway remains an auth blocker; dashboards remain authoritative for actual invoices and usage. |
 
 ## Repository Inventory
 
@@ -26,7 +26,7 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 | `claudecode-codex-config` | `<WORKSPACE_ROOT>/claudecode-codex-config` | `kt-aicoding/claudecode-codex-config` | `main` | clean | verified | Installer now supports `--dry-run`; README local development commands use dry-run/temp install; unit tests and temp install validation passed; local HEAD matches remote `main`. |
 | `claudecode-codex-switch` | `<WORKSPACE_ROOT>/claudecode-codex-switch` | `kt-aicoding/claudecode-codex-switch` | `main` | clean | verified | README already has one-line install and copy-paste usage; `tests/smoke.sh`, `bash -n`, and README SVG validation passed; remote `main` verified through GitHub API after transient TLS failures. |
 | `claws` | `<WORKSPACE_ROOT>/claws` | `kt-aicoding/claws` | `main` | clean | inventoried | Cataloged under operations. |
-| `cli-tools` | `<WORKSPACE_ROOT>/cli-tools` | `kt-aicoding/cli-tools` | `main` | clean | verified | README now includes local validation and Chinese related-skill links; docs passed diff and sensitive scans; local HEAD matches remote `main`. |
+| `cli-tools` | `<WORKSPACE_ROOT>/cli-tools` | `kt-aicoding/cli-tools` | `main` | clean | verified | README includes local validation and Chinese related-skill links; Cloudflare resource snapshot completed; docs passed diff and sensitive scans; local HEAD matches remote `main`. |
 | `hermes` | `<WORKSPACE_ROOT>/hermes` | `kt-aicoding/hermes` | `main` | clean | verified | Local HEAD `18d7939` matches remote `main`; existing dirty state has been resolved before this pass. |
 | `images` | `<WORKSPACE_ROOT>/images` | `kt-aicoding/images` | `main` | clean | verified | README now includes project-type image usage guidance; SVG export script and example asset validated; local HEAD matches remote `main`. |
 | `mcp-servers` | `<WORKSPACE_ROOT>/mcp-servers` | `kt-aicoding/mcp-servers` | `main` | clean | verified | README now includes local validation and Chinese related-skill links; docs passed diff and sensitive scans; local HEAD matches remote `main`. |
@@ -44,8 +44,8 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 | GitHub | `env -u GH_TOKEN gh auth status --active`; REST repo list | verified | Keyring auth works; 16 public `kt-aicoding` repos enumerated. Do not record token details. |
 | Vercel | `vercel whoami`; `vercel project ls ... --json` | verified | Logged in; 4 projects visible from read-only CLI query. |
 | Supabase | `supabase projects list` | verified | One active project, `kevinten10`, visible; local registry repo is not linked to a Supabase project. |
-| Cloudflare | `wrangler whoami`; resource list commands | partially verified | Logged in through `wrangler`; Pages=1 and D1=1 parsed. KV/R2/Queues JSON commands returned unsupported/unknown output in the latest run, so use dashboard or supported CLI output before cost actions. |
-| Netlify | `netlify status`; `netlify sites:list --json` | partially verified | Logged in/current directory status is visible; latest site-list command returned no parseable JSON body, so verify site count and credits in dashboard. Do not record account email. |
+| Cloudflare | `wrangler whoami`; resource list commands | verified with recheck note | `cli-tools/docs/local-cli-system.md` records Pages=1, KV=2, D1=1, R2=1, Queues=1 from 2026-06-28 read-only checks. Use dashboard for actual usage and cost. |
+| Netlify | `netlify status`; `netlify sites:list --json` | verified with recheck note | `cli-tools/docs/local-cli-system.md` records site list count 0; dashboard remains authoritative for credits and invoices. Do not record account email. |
 | Fly.io | `flyctl auth whoami`; `flyctl apps list --json` | verified | Logged in; apps list count is 0; metrics send warning is non-blocking. Do not record account email. |
 | Railway | `railway whoami` | external blocker | CLI reports unauthorized; next action is `railway login` when Railway checks are needed. |
 | CloudBase | `tcb env list` | verified | One normal personal environment visible; do not record raw environment identifiers in public docs. |
@@ -76,6 +76,7 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 | 2026-06-28 | config | Added safe `--dry-run` support to the claudecode/codex config installer and made local dev validation use dry-run/temp paths. | `claudecode-codex-config@26bf9ba`; verified with `python3 -m unittest`, installer help, dry-run, temp install, sensitive scan, GitHub API, and `git ls-remote origin main`. |
 | 2026-06-28 | validation | Revalidated the model/provider switcher without code changes. | `claudecode-codex-switch@a9466e0`; `bash tests/smoke.sh`, `bash -n`, and `xmllint` passed; remote `main` verified through GitHub API. |
 | 2026-06-28 | governance | Added validation entrypoints to CLI/MCP governance repos and install/validation guidance to the skills repo. | `cli-tools@19fca15`, `mcp-servers@127fc1a`, `skills@0e16658`; verified with `git diff --check`, sensitive scans, `quick_validate.py`, GitHub API file checks, and `git ls-remote origin main`. |
+| 2026-06-28 | CLI inventory | Completed the Cloudflare resource snapshot in CLI operating docs. | `cli-tools@bec1dee`; remote `main` verified through `git ls-remote` and GitHub API. |
 
 ## Blockers
 
@@ -93,6 +94,6 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 - [x] Each repository has status: inventoried, deferred, in progress, not applicable, or externally blocked.
 - [x] Completed/inventoried repository items have validation evidence appropriate to this pass.
 - [x] Pushed repository items have remote refs matching local commits for this pass.
-- [x] Platform checks have current read-only evidence or blocker records where parseable, plus public-safe official pricing/free-tier references and recheck notes for unclear CLI output.
+- [x] Platform checks have current read-only evidence or blocker records, plus public-safe official pricing/free-tier references and dashboard recheck notes for billing-sensitive conclusions.
 - [x] Public docs passed sensitive-output scan for final committed scope; matches are safety-policy text or placeholders, not raw secrets.
 - [x] Remaining findings are classified as in-progress, deferred dirty worktree, external blocker, or non-destructive follow-up.
