@@ -1,6 +1,6 @@
 # Local CLI And MCP System
 
-Last refreshed: 2026-06-27.
+Last refreshed: 2026-06-28.
 
 This page is the registry-level index for Kevin's local CLI and MCP operating model. Detailed operating docs live in the category-specific repositories.
 
