@@ -20,7 +20,7 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 
 | Repository | Local path | Remote | Branch | Dirty status | Status | Evidence / next action |
 | --- | --- | --- | --- | --- | --- | --- |
-| `.github` | not checked out under a safe kt-aicoding path | `kt-aicoding/.github` | `main` | n/a | inventoried remote | Organization profile repo; cataloged under supporting resources. |
+| `.github` | `<WORKSPACE_ROOT>/kt-aicoding-dotgithub` | `kt-aicoding/.github` | `main` | clean | inventoried | Organization profile repo; cataloged under supporting resources. |
 | `agent-workflows` | `<WORKSPACE_ROOT>/agent-workflows` | `kt-aicoding/agent-workflows` | `main` | clean | inventoried | Cataloged under agent workflows. |
 | `agents` | `<WORKSPACE_ROOT>/agents` | `kt-aicoding/agents` | `main` | dirty | deferred | Existing local edits and untracked `docs/goals/`; do not overwrite in this run. |
 | `claudecode-codex-config` | `<WORKSPACE_ROOT>/claudecode-codex-config` | `kt-aicoding/claudecode-codex-config` | `main` | clean | inventoried | Cataloged under CLI tools. |
@@ -30,7 +30,7 @@ Follow `docs/goals/ai-coding-system-exploration-optimization.md` to explore and 
 | `hermes` | `<WORKSPACE_ROOT>/hermes` | `kt-aicoding/hermes` | `main` | dirty | deferred | Existing local edits and untracked files; do not overwrite in this run. |
 | `images` | `<WORKSPACE_ROOT>/images` | `kt-aicoding/images` | `main` | clean | inventoried | Cataloged under supporting resources. |
 | `mcp-servers` | `<WORKSPACE_ROOT>/mcp-servers` | `kt-aicoding/mcp-servers` | `main` | clean | inventoried | MCP docs already link governance skill. |
-| `registry` | `<WORKSPACE_ROOT>/registry` | `kt-aicoding/registry` | `main` | dirty | in progress | Goal file, ledger, and catalog updates are in progress. |
+| `registry` | `<WORKSPACE_ROOT>/registry` | `kt-aicoding/registry` | `main` | clean | verified | Goal file, ledger, and catalog updates are pushed and verified. |
 | `skill-goal` | `<WORKSPACE_ROOT>/skill-goal` | `kt-aicoding/skill-goal` | `main` | clean | inventoried | Added to skills catalog as standalone `goal-prompt` skill repo. |
 | `skill-image` | `<WORKSPACE_ROOT>/skill-image` | `kt-aicoding/skill-image` | `main` | clean | inventoried | Added to skills catalog. |
 | `skill-jd` | `<WORKSPACE_ROOT>/skill-jd` | `kt-aicoding/skill-jd` | `main` | clean | inventoried | Added to skills catalog. |
